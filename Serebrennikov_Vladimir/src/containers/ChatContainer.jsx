@@ -24,12 +24,12 @@ X
   componentDidUpdate() {
 
     let { chatId } = this.props.match.params;
-    let currentChat = this.state.messages[chatId];
-    console.log(chatId)
+    let chat = this.state.messages[chatId];
+    
+    let lengthChat = chat.length;
+    console.log(chat[ lengthChat - 1 ].sender !== "bot")
 
-    let lengthChat = currentChat.length;
-
-    if (currentChat[ lengthChat - 1 ].name != "Робот") {
+    if (chat[ lengthChat - 1 ].sender !== "bot") {
       setTimeout(() => 
         this.setState({
           messages: {
@@ -39,7 +39,7 @@ X
               {name: "Робот", text: "Я здесь", sender: "bot"}
             ]
           }
-        }), 2000);
+        }), 1000);
     }
   }
 
