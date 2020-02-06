@@ -7,7 +7,7 @@ export default class ChatsListContainer extends Component {
     chats: {
       1: {title: 'О жизни', messageList: 1},
       2: {title: 'Философия', messageList: 2},
-      3: {title: 'Как наказать начальника', messageList: 3},
+      3: {title: 'JavaScript', messageList: 3},
     },
   };
 
