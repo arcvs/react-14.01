@@ -35,7 +35,7 @@ export default class MessageSender extends Component {
 
   render() {
     return (
-      <div>
+      <div className="MessageSender">
         <TextField
           onChange={this.handleChange}
           onKeyUp={this.handleKeyUpSubmit}
@@ -56,8 +56,8 @@ export default class MessageSender extends Component {
           size="small"
           > 
             Отправить 
-            <SendIcon style={{ marginLeft: '7px' }} />
-          </Button>
+          <SendIcon style={{ marginLeft: '7px' }} />
+        </Button>
       </div>
     )
   }

@@ -1,8 +1,8 @@
 import React from "react";
 import './Message.css';
 
-export const Message = ({name, text, sender}) => (
-  <div className='Message' style={{alignSelf: sender === 'bot' ? 'flex-start' : 'flex-end' }}>
+export const Message = ({name, text, autoSender}) => (
+  <p className={ autoSender ? 'Message-left' : 'Message-right' }>
     <strong>{name}:</strong> {text}
-  </div>
+  </p>
 );

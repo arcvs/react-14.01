@@ -1,7 +1,21 @@
-.Message {
-  display: inline;
+.Message-left,
+.Message-right {
+  display: inline-block;
   padding: 10px;
-  margin: 5px;
+  margin: 5px 0;
   border-radius: 10px;
-  background-color: aliceblue;
+  box-sizing: border-box;
+}
+
+.Message-left {
+  align-self: flex-start;
+  background-color: #e9e7eb;
+  color: #554a54;
+}
+
+.Message-right {
+  align-self: flex-end;
+  background-color: #585cb8;
+  margin-right: 10px;
+  color: #fff;
 }

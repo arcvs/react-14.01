@@ -1,0 +1,14 @@
+.MessageSender {
+  margin-top: -124px;
+  padding-right: 24px;
+  position: absolute;
+  width: 100%;
+  min-height: 114px;
+  bottom: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.MessageSender button {
+  /* background-color: #1259a0; */
+}
